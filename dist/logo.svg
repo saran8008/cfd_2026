@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 110" width="100%" height="100%">
+  <defs>
+    <linearGradient id="svgGradOrangeRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7941D" />
+      <stop offset="50%" stop-color="#E8192C" />
+      <stop offset="100%" stop-color="#EC008C" />
+    </linearGradient>
+    <linearGradient id="svgGradCyanGreen" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#29ABE2" />
+      <stop offset="50%" stop-color="#0071BC" />
+      <stop offset="100%" stop-color="#2B9348" />
+    </linearGradient>
+    <linearGradient id="svgGradCore" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7D117" />
+      <stop offset="100%" stop-color="#F7941D" />
+    </linearGradient>
+    <filter id="svgGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- LOGO EMBLEM ICON (CFD Vorticity Streamlines) -->
+  <g transform="translate(15, 10)">
+    <!-- Outer Streamline Ring -->
+    <path d="M 45 10 C 72 10, 85 30, 80 54 C 75 76, 52 84, 28 78 C 12 72, 6 50, 12 32 C 18 18, 32 10, 45 10" 
+          fill="none" stroke="url(#svgGradOrangeRed)" stroke-width="7.5" stroke-linecap="round" filter="url(#svgGlow)"/>
+    
+    <!-- Inner Counter Flow Streamline -->
+    <path d="M 45 78 C 20 78, 10 56, 15 36 C 20 16, 42 12, 62 16 C 76 22, 80 42, 74 60 C 66 74, 56 78, 45 78" 
+          fill="none" stroke="url(#svgGradCyanGreen)" stroke-width="5.5" stroke-linecap="round" opacity="0.95"/>
+    
+    <!-- Central High-Velocity Core -->
+    <circle cx="45" cy="45" r="11" fill="url(#svgGradCore)" filter="url(#svgGlow)"/>
+    <circle cx="45" cy="45" r="5" fill="#ffffff"/>
+    
+    <!-- Particle Tracers -->
+    <circle cx="80" cy="54" r="3.5" fill="#F7D117"/>
+    <circle cx="12" cy="32" r="3" fill="#29ABE2"/>
+  </g>
+
+  <!-- TYPOGRAPHY -->
+  <g transform="translate(115, 62)">
+    <text x="0" y="0" font-family="'Montserrat', sans-serif" font-size="38" font-weight="900" letter-spacing="2" fill="#FFFFFF">
+      FLO<tspan fill="#F7941D">DYN</tspan><tspan fill="#29ABE2">CO</tspan><tspan fill="#F7941D">.</tspan>
+    </text>
+    <text x="2" y="22" font-family="'Montserrat', sans-serif" font-size="9.5" font-weight="700" letter-spacing="5" fill="#94A3B8" text-transform="uppercase">
+      FLUID DYNAMICS &amp; CFD SOLUTIONS
+    </text>
+  </g>
+</svg>
